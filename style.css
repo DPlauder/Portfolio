@@ -14,7 +14,7 @@ body{
     left: 0;
     width: 100%;  
     padding-left: 50px;
-    padding: 50px;
+    padding-right: 50px;
     align-items: center;
     height: 100px;
     z-index: 999;
@@ -29,6 +29,7 @@ body{
     width: 60%;
     height: 100px;
     padding: 20px;
+    padding-bottom: 0;
     color: white;
     align-items: center;
     justify-self: right;
@@ -42,13 +43,16 @@ body{
     list-style: none;
     flex-direction: row;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
 /*-------------------------------MAIN START/ABOUT/Page1------------------------------------------*/
 .about-container{
     top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 100%;
     height: calc(100vh - 100px);
 }
@@ -66,6 +70,7 @@ body{
 .subheader-container{
     width: 100%;
     text-align: center;
+    scroll-snap-stop: always;
 }
 .sub-heading .line {
     border: 1px solid red;
@@ -73,6 +78,14 @@ body{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+#anchor-about-me{
+    position: absolute;
+    top: calc(100vh - 100px);
+}
+#anchor-project{
+    position: absolute;
+    top: calc(200vh - 100px);
 }
 /*-------------------------------ABOUT ME------------------------------------------*/
 .about-me-container{
@@ -99,7 +112,7 @@ body{
     background-color: rgb(66, 66, 66) ;
     width: 70%;
     min-width: 400px;
-    max-width: 600px;
+    max-width: 550px;
     height: 80%;
     border-radius: 60px;
     text-align: center;
