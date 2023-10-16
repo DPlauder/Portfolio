@@ -5,6 +5,7 @@
 body{
     background-color: rgb(66, 66, 66);
 }
+/*-------------------------------header------------------------------------------*/
 .kopf{
     display: flex;
     position: sticky;
@@ -16,6 +17,7 @@ body{
     padding: 50px;
     align-items: center;
     height: 100px;
+    z-index: 999;
 }
 .infos{
     width: 40%;
@@ -25,7 +27,7 @@ body{
 }
 .nav_bar{
     width: 60%;
-    height: 100%;
+    height: 100px;
     padding: 20px;
     color: white;
     align-items: center;
@@ -40,6 +42,7 @@ body{
     list-style: none;
     flex-direction: row;
 }
+/*-------------------------------MAIN START/ABOUT/Page1------------------------------------------*/
 .about-container{
     top: 100px;
     display: flex;
@@ -58,23 +61,88 @@ body{
 }
 .name{
     color: red;
+/*-------------------------------SUBLINE------------------------------------------*/
 }
 .subheader-container{
     width: 100%;
     text-align: center;
 }
-.section-header{
-    display: inline;
-    color: white;
-    padding: 30px;
-    font-size: 2.5em;
-    font-weight: 500;
-    background-color: rgb(66, 66, 66)
-}
 .sub-heading .line {
     border: 1px solid red;
     opacity: 50%;
-    width: 95%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+/*-------------------------------ABOUT ME------------------------------------------*/
+.about-me-container{
+    display: flex;
+    height: calc(100vh - 101px);
+    background-color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.profile-container{
+    display: flex;
+    width: 45%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+.profile {
+    display: grid;
+    padding: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    background-color: rgb(66, 66, 66) ;
+    width: 70%;
+    min-width: 400px;
+    max-width: 320px;
+    height: 80%;
+    border-radius: 60px;
+    text-align: center;
+}
+.image-container{
+    display: flex;
+    grid-column: 1 / span 2;
+    background-color: rgb(256,256,256,0.5);
+    border: 1px solid red;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.profile-image{
+    font-size: 1400%;
+    color: rgb(34, 25, 25);
+}
+.profile-text{
+    margin-top: 50px;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    font-size: 1.5em;
+    color: white;
+    text-align: left;
+}
+.icons-container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5,1fr);
+    padding-top: 50px;
+    padding-left: 50px;
+    width: 55%;
+    height: 90%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.fa-brands{
+    font-size: 400%;
+}
+/*-------------------------------PROJECTS------------------------------------------*/
+.project-container{
+    height: calc(100vh - 101px);
+    width: 100%;
+    background-color: rgb(66, 66, 66) ;
 }
