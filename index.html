@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,9 @@
     <script src="./dist/main.js" defer type="module"></script>
     <title>Dominik Plauder</title>
 </head>
+
 <body>
-    <hr id="anchor-top">
+    <hr id="anchor-top" class="anchor">
     <header class="kopf">
         <div class="infos">
             <div class="name">Dominik Plauder</div>
@@ -20,21 +22,21 @@
                 <li><a href="#anchor-top">Home</a></li>
                 <li><a href="#anchor-about-me">About Me</a></li>
                 <li><a href="#anchor-project">Projects</a></li>
-                <li>Contact</li>
+                <li><a href="#anchor-contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>       
+    <main>
         <section class="about-container" id="about">
             <div class="about-content">
                 <div class="about-text">
-                    <p>Hi, I'm <span class="name">Dominik</span>.</p> 
-                    <p>This site is a showcase for my projects.</p>                  
-                </div>        
-            </div>            
+                    <p>Hi, I'm <span class="name">Dominik</span>.</p>
+                    <p>This site is a showcase for my projects.</p>
+                </div>
+            </div>
         </section>
         <section class="sub-heading">
-            <hr id="anchor-about-me">
+            <hr id="anchor-about-me" class="anchor">
             <hr class="line">
         </section>
         <section class="about-me-container" id="about-me">
@@ -43,7 +45,8 @@
                     <div class="image-container">
                         <i class="fa-solid fa-user profile-image"></i>
                     </div>
-                    <p class="profile-text">As someone who is currently in training to become a programmer, i'm always looking for projects i can expand my skills.</p>
+                    <p class="profile-text">As someone who is currently in training to become a programmer, i'm always
+                        looking for projects i can expand my skills.</p>
                 </div>
             </div>
             <div class="icons-container">
@@ -54,39 +57,75 @@
                 <div class="tech-icon">
                     <i class="fa-brands fa-css3-alt"></i>
                     <p> CSS</p>
-                </div>               
+                </div>
                 <div class="tech-icon">
                     <i class="fa-brands fa-js" style="color: #d7ee2b;"></i>
                     <p>JAVASCRIPT</p>
-                </div>               
+                </div>
                 <div class="tech-icon">
                     <i class="fa-brands fa-sass" style="color: #db4af7;"></i>
                     <p>SASS</p>
-                </div>               
+                </div>
                 <div class="tech-icon">
                     <i class="fa-brands fa-node-js" style="color: #36da16;"></i>
                     <p>NODEJS</p>
-                </div>               
+                </div>
                 <div class="tech-icon">
                     <i class="fa-brands fa-github"></i>
                     <p>GITHUB</p>
-                </div>  
+                </div>
                 <div class="tech-icon">
                     <i class="fa-brands fa-git-alt" style="color: #e67f0a;"></i>
                     <p>GIT</p>
-                </div>               
+                </div>
                 <div class="tech-icon">
                     <i class="fa-brands fa-npm" style="color: #c71f1f;"></i>
                     <p>NPM</p>
                 </div>
+                <div class="tech-icon">
+                    <i class="fa-brands fa-npm" style="color: #c71f1f;"></i>
+                    <p>TypeScript</p>
+                </div>
+
             </div>
         </section>
         <section class="sub-heading">
-            <hr id="anchor-project">
+            <hr id="anchor-project" class="anchor">
             <hr class="line">
         </section>
-        <section class="project-container"></section>
+        <section class="projects-container">
+
+            <div class="project-content">
+                <div class="project-title">
+                    <h1>Mensch Ärgere Dich Nicht</h1>
+                    <p>TypeScript Game</p>
+                </div>
+                <div class="project-info">                    
+                    <div class="project-description">A JavaScript Browsergame built with Typescript, HTML and CSS </div>
+                    <div class="project-tech">
+                        <h2>Technologies</h2>
+                        <p>TypeScript, HTML, CSS, NodeJs</p>
+                        <p>Date: 2023</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="Preview">Preview</a>
+                        <a href="Repo">Github</a>
+                    </div>
+                </div>
+                <div class="slideshow-container" id="project">
+                    <img src="./src/img/img1.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="sub-heading">
+            <hr id="anchor-contact" class="anchor">
+            <hr class="line">
+        </section>
+        <section class="contact">
+
+        </section>
     </main>
-    
+
 </body>
+
 </html>

@@ -43,7 +43,7 @@ body{
     list-style: none;
     flex-direction: row;
 }
-a{
+.nav_list a{
     color: white;
     text-decoration: none;
 }
@@ -85,12 +85,16 @@ a{
 }
 #anchor-project{
     position: absolute;
-    top: calc(200vh - 100px);
+    top: calc(200vh - 200px);
+}
+#anchor-contact{
+    position: absolute;
+    top: calc(300vh - 275px);
 }
 /*-------------------------------ABOUT ME------------------------------------------*/
 .about-me-container{
     display: flex;
-    height: calc(100vh - 101px);
+    height: calc(100vh - 105px);
     background-color: white;
     flex-direction: row;
     justify-content: center;
@@ -141,7 +145,7 @@ a{
 .icons-container{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
     padding-top: 50px;
     padding-left: 50px;
     width: 55%;
@@ -154,8 +158,55 @@ a{
     font-size: 400%;
 }
 /*-------------------------------PROJECTS------------------------------------------*/
-.project-container{
-    height: calc(100vh - 101px);
+.projects-container{
+    height: calc(100vh - 100px);
     width: 100%;
     background-color: rgb(66, 66, 66) ;
 }
+.project-content{
+    height: 45%;
+    width: 80%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 2fr 2fr;
+
+}
+.project-title{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1.4em;
+}
+.project-info{
+    height: 100%;
+    margin: 10px;
+    grid-column: 1;
+    grid-row: 2 / span 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+.slideshow-container{
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1 / span 3;
+
+}
+img{
+    margin: 10px;
+    height: calc(100% - 20px);
+    width: auto;
+}
+/*-------------------------------CONTACT------------------------------------------*/
+.contact{
+    height: calc(100vh - 101px);
+    width: 100%;
+    background-color: white;
+}
+/*-------------------------------Slider------------------------------------------------
+*
